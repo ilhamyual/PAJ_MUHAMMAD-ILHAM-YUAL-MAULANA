@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 
 Route::get('/about', function () {
-    return 'ini halaman about';
+    return '<center> <h1> ini halaman about <h1> <center>';
 });
 
 Route::get('/services', function () {
