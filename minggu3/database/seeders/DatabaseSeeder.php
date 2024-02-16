@@ -7,14 +7,15 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
+    /**s
      * Seed the application's database.
      */
     public function run(): void
-    {
-        \App\Models\Voter::factory(10)->create();
+    {    
+        
        $this->call([
-        UserSeeder::class,
+        VoterSeeder::class,
        ]);
+
     }
 }

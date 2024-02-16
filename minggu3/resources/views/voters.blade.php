@@ -8,10 +8,12 @@
 </head>
 <body>
     <table border="1">
+        @foreach ($voter as $vote)
         <tr>
-            <td>Shepherd</td><td>Ju Peter</td>
-            <td>Topman</td><td>Warcury</td>
-            <td>Ethanbaron</td><td>V. Nusjuro</td>
+            {{--@foreach ($voter as $vote)--}}
+            <td>{{$vote->name}}</td><td>{{$vote->email}}</td><td>{{$vote->address}}</td>
+            {{--@endforeach--}}
         </tr>
+        @endforeach
     </table>
 </body>

@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VoterController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\TaskController;
 
+Route::get('/task', [TaskController::class, 'index']);
 
 Route::get('/', function () {
     return view('welcome');
