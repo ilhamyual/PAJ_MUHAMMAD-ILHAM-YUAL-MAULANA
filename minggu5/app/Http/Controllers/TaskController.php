@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\TaskRequest;
 use App\Models\Task;
+use App\Http\Requests\UpdateTaskRequest;
 
 class TaskController extends Controller
 {
@@ -19,10 +20,11 @@ class TaskController extends Controller
         return view('task.edit', compact('task'));
     }
     
-    public function update(Task $task, TaskRequest $request){
+    public function update(UpdateTaskRequest $request, Task $task){
         $task->update($request->validated());
         return redirect('/task');
     }
+    
 
     public function create(){
         return view('task.create');
