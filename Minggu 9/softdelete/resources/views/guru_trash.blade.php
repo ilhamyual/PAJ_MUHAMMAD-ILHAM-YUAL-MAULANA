@@ -23,7 +23,7 @@
  
 				<a href="/guru/kembalikan_semua">Kembalikan Semua</a>
 				|
-				<a href="/guru/hapus_permanen_semua">Hapus Permanen Semua</a>
+				<a href="/guru/hapus_permanen_semua" class="btn btn-danger btn-sm">Hapus Permanen Semua</a>
 				<br/>
 				<br/>
  

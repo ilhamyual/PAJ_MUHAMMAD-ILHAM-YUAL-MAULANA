@@ -28,6 +28,10 @@ Route::get('/guru/hapus/{id}', [GuruController::class, 'hapus']);
 Route::get('/guru/trash', [GuruController::class, 'trash']);
 Route::get('/guru/kembalikan_semua', [GuruController::class, 'kembalikan_semua']);
 Route::get('/guru/restore/{id}', [GuruController::class, 'restore']);
+Route::get('/guru/hapus_permanen/{id}', [GuruController::class, 'hapus_permanen']);
+Route::get('/guru/hapus_permanen_semua', [GuruController::class, 'hapus_permanen_semua']);
+
+
 
 Route::get('/upload', [UploadController::class, 'upload']);
 Route::post('/upload/proses', [UploadController::class, 'proses_upload']);
